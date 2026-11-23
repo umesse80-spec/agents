@@ -1,0 +1,140 @@
+/* CSS retrouvé collé par erreur à la fin de token-backup.json.
+   Il n'est chargé nulle part : ajoute <link rel="stylesheet" href="ajustements-assistant-chatgpt.css"> dans index.html si tu veux l'utiliser. */
+
+/* ==========================================
+   AJUSTEMENTS — RESSEMBLER À CHATGPT
+========================================== */
+
+/* Barre latérale */
+#assistant-view .assistant-layout {
+    grid-template-columns: 280px minmax(0, 1fr);
+}
+
+#assistant-view .assistant-sidebar {
+    width: 280px;
+    padding: 16px 8px 12px;
+    gap: 12px;
+}
+
+/* Navigation sans encadrement */
+#assistant-view .assistant-nav-item {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 13px;
+    padding: 8px 12px;
+    border: none !important;
+    border-radius: 9px;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #454545;
+    font-size: 15px;
+    text-align: left;
+}
+
+#assistant-view .assistant-nav-item:hover {
+    background: #f1f1f1 !important;
+}
+
+/* Zone centrale plus large */
+#assistant-view .assistant-messages {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#assistant-view .assistant-composer {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 64px;
+    margin: 0 auto;
+    padding: 10px 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 28px;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .06);
+}
+
+/* Barre de saisie sur une seule ligne */
+#assistant-view .assistant-composer textarea {
+    order: 1;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    height: 36px;
+    min-height: 36px;
+    max-height: 100px;
+    padding: 8px 2px;
+    margin: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+/* Boutons intégrés à la barre */
+#assistant-view .assistant-tools {
+    display: contents;
+}
+
+#assistant-view .assistant-upload {
+    order: 0;
+    flex-shrink: 0;
+}
+
+#assistant-view .assistant-analyze {
+    order: 2;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+#assistant-view #assistant-send {
+    order: 3;
+    flex-shrink: 0;
+}
+
+/* Aperçu des images */
+#assistant-view #assistant-preview {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+/* Messages plus lisibles */
+#assistant-view .assistant-user-message {
+    max-width: 75%;
+    padding: 13px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+#assistant-view .assistant-ai-message {
+    max-width: 85%;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+/* Accueil */
+#assistant-view .assistant-welcome h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 750px) {
+    #assistant-view .assistant-composer {
+        gap: 7px;
+        padding: 9px 10px;
+    }
+
+    #assistant-view .assistant-analyze {
+        display: none;
+    }
+}

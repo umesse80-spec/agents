@@ -1,0 +1,24 @@
+node_modules/
+.env
+# Identifiants et jetons privés
+gmail-credentials.json
+gmail-credentials.json.json
+token.json
+
+# Dépendances
+node_modules/
+
+# Variables d'environnement
+.env
+.env.*
+
+# Fichiers système
+Thumbs.db
+
+# Automatisations : clés API des connexions et données locales
+data/automation-connections.json
+data/automation-runs.json
+data/automation-hooks.json
+
+# Jeton Gmail de sauvegarde (contient un jeton de rafraîchissement)
+token-backup.json
